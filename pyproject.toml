@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "lyrics-converter"
 dynamic = ["version"]
-description = ''
+description = 'Tool to convert between different text-based lyrics formats (e.g. LRC, MidiCo LRC, ASS, TXT)'
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
@@ -24,10 +24,14 @@ classifiers = [
 ]
 dependencies = []
 
+[project.scripts]
+lyrics-converter = "lyrics_converter.cli:main"
+
 [project.urls]
-Documentation = "https://github.com/Andrew Beveridge/lyrics-converter#readme"
-Issues = "https://github.com/Andrew Beveridge/lyrics-converter/issues"
-Source = "https://github.com/Andrew Beveridge/lyrics-converter"
+Documentation = "https://github.com/beveradb/lyrics-converter#readme"
+Issues = "https://github.com/beveradb/lyrics-converter/issues"
+Source = "https://github.com/beveradb/lyrics-converter"
+"Homepage" = "https://github.com/beveradb/lyrics-converter"
 
 [tool.hatch.version]
 path = "src/lyrics_converter/__about__.py"
